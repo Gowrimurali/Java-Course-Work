@@ -1,9 +1,9 @@
 package com.spartaglobal.gm.Oops;
 
 public abstract class Animal {
-    String name;
-    String breed;
-    int age;
+    private String name;
+    private String breed;
+    private int age;
 
 
 
@@ -11,6 +11,7 @@ public abstract class Animal {
         this.name = name;
         this.breed = breed;
         this.age = age;
+
     }
 
     public String getName() {
@@ -37,18 +38,6 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public static boolean checkNameField(String name){
-        if (name.length() == 0) {
-            return false;
-        }else{
-            for (char character : name.toCharArray()) {
-                if (!((character >= 'A' && character <= 'Z') || (character >= 'a' && character <= 'z'))) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
 
 
     public void speak(){

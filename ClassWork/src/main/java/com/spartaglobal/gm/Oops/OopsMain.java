@@ -12,23 +12,22 @@ public class OopsMain {
         //felix.speak();
         //Peter.speak("Manish");
 
-        String name = "";
+        String name = "aa";
         String breed = "Mane Coon";
         int age = 15;
 
-        Cat cat1 = constructObject(name,breed,age);
-        if(!(cat1.checkNameField(cat1.name))){
-            cat1 = null;
-        }
+        Cat cat1 = constructCat(name,breed,age);
+        System.out.println(cat1.getAge());
+        //cat1 = cat1.checkNameField(cat1);
 
-        System.out.println(cat1);
+
 
 
     }
 
 
 
-    public static Cat constructObject (String name, String breed,int age){
+    public static Cat constructCat (String name, String breed,int age){
         Cat cat1 = new Cat(name, breed, age);
         return cat1;
     }

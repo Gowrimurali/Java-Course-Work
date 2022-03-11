@@ -12,5 +12,4 @@ public class NumberOfVowelsTest {
         Assertions.assertEquals(2,NumberofVowels.getVowels("Apple"));
     }
 
-
 }
