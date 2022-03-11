@@ -11,7 +11,6 @@ public abstract class Animal {
         this.name = name;
         this.breed = breed;
         this.age = age;
-
     }
 
     public String getName() {
@@ -34,14 +33,18 @@ public abstract class Animal {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public String setAge(int age) {
+        if(age<=0){
+            return "Age can only be positive!!";
+        }else {
+            this.age = age;
+            return "Age updated to " + this.age;
+        }
     }
 
 
-
-    public void speak(){
-        System.out.println("Animal is speaking");
+    public String speak(){
+        return "Animal is speaking";
     }
 
     @Override

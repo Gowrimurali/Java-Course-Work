@@ -9,7 +9,5 @@ public class SortMain {
         System.out.println("The input array is: " + Arrays.toString(ch.array));
         int[] sortedArray = ch.getSortedArray(ch.array);
         System.out.println("Sorted Array is: " + Arrays.toString(sortedArray));
-
     }
-
 }

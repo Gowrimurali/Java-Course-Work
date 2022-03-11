@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 public class MergeArrayTest {
-
     @Test
     @DisplayName("Return merged sorted array")
     public void returnMergedSortedArray(){
@@ -16,6 +15,4 @@ public class MergeArrayTest {
         int[] expectedArray = {-9, -2, 0, 1, 1, 2, 2, 4, 4, 4, 5, 6, 7};
         Assertions.assertEquals(Arrays.toString(expectedArray), Arrays.toString(Merge.mergedArray(array1,array2)));
     }
-
-
 }

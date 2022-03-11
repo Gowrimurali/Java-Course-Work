@@ -11,6 +11,5 @@ public class FizzBuzzGenerator {
         }else{
             return String.valueOf(number);
         }
-
     }
 }

@@ -42,20 +42,21 @@ public enum Colous {
         this.colourCode = colourCode;
     }
 
-
     private static void setColourNameAndColourCode() {
-        for (Colous colour : Colous.values()) {
-
             System.out.println("Enter the colour name: ");
             Scanner sc = new Scanner(System.in);
-            String colourName = sc.nextLine();
+            String[] colourName = new String[Colous.values().length];
+            for (int i = 0; i<colourName.length; i++){
+                colourName[i] = sc.nextLine();
+            }
             System.out.println("Enter the colour code: ");
-            int colourCode = sc.nextInt();
-            colour.setColourCode(colourCode);
-            colour.setColourName(colourName);
-
-
-        }
+            int[] colourCode = new int[Colous.values().length];
+            for (int i = 0; i<colourCode.length; i++){
+                colourCode[i] = sc.nextInt();}
+            for (int i =0; i<Colous.values().length; i++){
+                Colous.values()[i].setColourName(colourName[i]);
+                Colous.values()[i].setColourCode(colourCode[i]);
+            }
     }
 
     public static void main(String[] args) {
@@ -69,7 +70,5 @@ public enum Colous {
         for (Colous colour : Colous.values()) {
             printColourNAmeAndCode(colour);
         }
-
     }
-
 }

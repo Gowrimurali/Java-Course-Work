@@ -3,7 +3,6 @@ package com.spartaglobal.gm.MergeArray;
 public class Merge {
 
     public static int[] mergedArray(int[] array1, int[] array) {
-
         int[] newArray = new int[array1.length + array.length];
         int array1Index = 0;
         int array2Index = 0;

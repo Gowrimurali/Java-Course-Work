@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 public class BubbleSortTest {
-
     @Test
     @DisplayName("Array should be sorted")
     void returnSortedArray(){
@@ -15,5 +14,4 @@ public class BubbleSortTest {
         int[] inputArray = {9, 34, 21, -67, 9, 0, -34, 74, 90, 3, 1, 8};
         Assertions.assertEquals(Arrays.toString(expectedOutput), Arrays.toString(BubbleSort.bubbleSort(inputArray)));
     }
-
 }

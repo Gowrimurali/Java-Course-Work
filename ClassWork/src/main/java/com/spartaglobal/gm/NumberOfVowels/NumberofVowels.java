@@ -17,7 +17,6 @@ public class NumberofVowels {
     public static void main(String[] args) {
         System.out.println(getVowels("Apple"));
     }
-
 }
 
 

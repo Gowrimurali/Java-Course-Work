@@ -6,9 +6,7 @@ public class Dog extends Animal{
         super(name, breed, age);
     }
 
-    public void speak(String owner){
-        System.out.println(this.getName() + " is speaking to "+ owner);
-
+    public String speak(String owner){
+        return this.getName().concat(" is speaking to ").concat(owner);
     }
-
 }

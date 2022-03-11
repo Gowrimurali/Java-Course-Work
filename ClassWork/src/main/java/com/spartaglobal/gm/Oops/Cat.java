@@ -3,16 +3,15 @@ package com.spartaglobal.gm.Oops;
 public class Cat extends Animal implements CheckFields {
     public Cat(String name, String breed, int age) {
         super(name, breed, age);
-
     }
 
-    public void speak(){
-        System.out.println("purrr");
+    public String speak(){
+        return "purrr";
     }
 
     @Override
     public Cat checkNameField(Cat cat) {
-        if (cat.getName().length() == 0) {
+        if (cat.getName().length() == 0 || cat.getBreed().length() == 0) {
             Cat cat1 = null;
             return cat1;
         }else{
@@ -25,5 +24,4 @@ public class Cat extends Animal implements CheckFields {
         }
         return cat;
     }
-
 }

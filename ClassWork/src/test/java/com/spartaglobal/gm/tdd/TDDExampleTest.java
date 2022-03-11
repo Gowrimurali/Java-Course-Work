@@ -1,5 +1,4 @@
 package com.spartaglobal.gm.tdd;
-
 import com.spartaglobal.gm.tdd.FizzBuzzGenerator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -11,6 +10,7 @@ public class TDDExampleTest {
     @DisplayName("Five should return Fizz")
     void fiveShouldReturnFizz(){
         Assertions.assertEquals("Fizz", FizzBuzzGenerator.getFizzBuzzValue(5));
+
     }
 
     @Test

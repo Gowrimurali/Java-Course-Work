@@ -12,7 +12,6 @@ public class LongestPalindromeInSentence {
             }
         }
         return true;
-
     }
 
     private static int getMaxIteration(String word) {
@@ -35,7 +34,6 @@ public class LongestPalindromeInSentence {
         int longestLength = 0;
         String[] words = sentenceToWordConverter("Hi Anna madam apqpa bnmnb");
         extracted(longestLength, words);
-
     }
 
     private static void extracted(int longestLength, String[] words) {
@@ -60,5 +58,4 @@ public class LongestPalindromeInSentence {
             }
         }
     }
-
 }

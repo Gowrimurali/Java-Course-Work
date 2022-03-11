@@ -1,7 +1,6 @@
 package com.spartaglobal.gm.SpeedChecker;
 
 public class SpeedChecker {
-
     public static void main(String[] args) {
         ForLoopTester forloop = new ForLoopTester();
         WhileTester whileloop = new WhileTester();
@@ -9,5 +8,4 @@ public class SpeedChecker {
         looptester.doTest(forloop, 30303);
         looptester.doTest(whileloop,30303);
     }
-
 }
